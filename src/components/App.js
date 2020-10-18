@@ -3,14 +3,21 @@ import '../styles/App.css';
 
 class App extends Component {
     render() {
+let  relatives =["srikanth","sainaveen","sai","vamsi","sairam","ramesh"];
 
         return(
-           <>
-//write your code here
-	</>
-        )
+            <>
+           <ol key="relativeList" >
+            {relatives.map((relative,index)=>
+                <li key={`relativeListItem${index+1}`}>
+                    </li>)}
+               
+                ))}
+            </ol>
+            </>
+        );
     }
 }
 
 
-export default App;
+ export default App;
